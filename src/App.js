@@ -266,7 +266,6 @@ function LeadForm({ bg = G.white, textColor = G.gray900 }) {
 }
 
 function Nav({ page, setPage }) {
-    const [menuOpen, setMenuOpen] = useState(false)
 
     return (
         <nav
