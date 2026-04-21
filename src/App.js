@@ -226,7 +226,7 @@ function Nav({ page, setPage }) {
                         <button key={key} onClick={() => navigate(key)} style={navBtnStyle(key)}>{label}</button>
                     ))}
                     <button onClick={() => navigate("contact")} style={{ background: "none", border: `1px solid ${G.gold}`, borderRadius: 3, padding: "8px 20px", cursor: "pointer", fontFamily: "'DM Sans', sans-serif", fontSize: 13, fontWeight: 500, letterSpacing: "0.06em", textTransform: "uppercase", color: G.gold }}>
-                        Work With Us
+                        Contact Us
                     </button>
                 </div>
 
@@ -241,7 +241,7 @@ function Nav({ page, setPage }) {
                 <div className="mobile-menu">
                     <button style={mobileBtnStyle} onClick={() => navigate("home")}>Home</button>
                     <button style={mobileBtnStyle} onClick={() => navigate("services")}>Services</button>
-                    <button style={{ ...mobileBtnStyle, color: G.gold, borderBottom: "none", marginTop: 4 }} onClick={() => navigate("contact")}>Work With Us</button>
+                    <button style={{ ...mobileBtnStyle, color: G.gold, borderBottom: "none", marginTop: 4 }} onClick={() => navigate("contact")}>Contact Us</button>
                 </div>
             )}
         </nav>
