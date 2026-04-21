@@ -258,7 +258,7 @@ function HomePage({ setPage }) {
                 <div style={{ maxWidth: 1100, margin: "0 auto", width: "100%", position: "relative", zIndex: 1 }}>
                     <div style={{ maxWidth: 680 }}>
                         <p style={{ fontSize: 12, fontWeight: 500, letterSpacing: "0.2em", textTransform: "uppercase", color: G.gold, marginBottom: 24 }}>
-                            Sales Performance Consulting
+                            Sales Consulting
                         </p>
                         <h1 style={{ fontFamily: "'Cormorant Garamond', serif", fontSize: "clamp(36px, 6vw, 72px)", fontWeight: 600, lineHeight: 1.1, color: G.white, marginBottom: 28 }}>
                             Your pipeline is telling you something.{" "}
