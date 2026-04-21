@@ -258,10 +258,10 @@ function HomePage({ setPage }) {
                 <div style={{ maxWidth: 1100, margin: "0 auto", width: "100%", position: "relative", zIndex: 1 }}>
                     <div style={{ maxWidth: 680 }}>
                         <p style={{ fontSize: 12, fontWeight: 500, letterSpacing: "0.2em", textTransform: "uppercase", color: G.gold, marginBottom: 24 }}>
-                            Sales Performance Consulting — Test
+                            Sales Performance Consulting
                         </p>
                         <h1 style={{ fontFamily: "'Cormorant Garamond', serif", fontSize: "clamp(36px, 6vw, 72px)", fontWeight: 600, lineHeight: 1.1, color: G.white, marginBottom: 28 }}>
-                            Sales Performance Consulting — Test{" "}
+                            Sales Performance Consulting{" "}
                             <em style={{ color: G.green600, fontStyle: "italic" }}>Are you listening?</em>
                         </h1>
                         <p style={{ fontSize: 18, lineHeight: 1.7, color: "rgba(255,255,255,0.7)", marginBottom: 48, maxWidth: 520 }}>
