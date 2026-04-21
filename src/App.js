@@ -261,7 +261,7 @@ function HomePage({ setPage }) {
                             Sales Performance Consulting
                         </p>
                         <h1 style={{ fontFamily: "'Cormorant Garamond', serif", fontSize: "clamp(36px, 6vw, 72px)", fontWeight: 600, lineHeight: 1.1, color: G.white, marginBottom: 28 }}>
-                            Your pipeline is telling you something.{" "}
+                            Sales Performance Consulting{" "}
                             <em style={{ color: G.green600, fontStyle: "italic" }}>Are you listening?</em>
                         </h1>
                         <p style={{ fontSize: 18, lineHeight: 1.7, color: "rgba(255,255,255,0.7)", marginBottom: 48, maxWidth: 520 }}>
@@ -417,3 +417,133 @@ function ServicesPage({ setPage }) {
                             <p style={{ fontSize: 16, lineHeight: 1.8, color: G.gray500, marginBottom: 36 }}>
                                 We'll audit how you're running deals today, identify where value is being left on the table, and rebuild your approach from the inside out — positioning, pricing conversations, close structure, and follow-through.
                             </p>
+                            <button onClick={() => navigate("contact")} style={{ padding: "14px 32px", background: G.green800, color: G.white, border: "none", borderRadius: 4, fontFamily: "'DM Sans', sans-serif", fontSize: 13, fontWeight: 500, letterSpacing: "0.06em", textTransform: "uppercase", cursor: "pointer" }}>
+                                Apply for Consulting
+                            </button>
+                        </div>
+                        <div style={{ border: `1px solid ${G.gray200}`, borderRadius: 8, overflow: "hidden" }}>
+                            <div style={{ background: G.green800, padding: "20px 28px" }}>
+                                <p style={{ fontFamily: "'Cormorant Garamond', serif", fontSize: 20, fontWeight: 600, color: G.white }}>What's included</p>
+                            </div>
+                            {[["Pipeline Audit", "A full review of your current deals, pricing approach, and close methodology"], ["Deal Strategy Sessions", "Live working sessions on your real opportunities in real time"], ["Positioning Overhaul", "Rebuild how you communicate value so buyers understand why you're worth more"], ["Objection Frameworks", "Custom responses built around the objections you actually face"], ["Close Rate Analysis", "Understand where deals die and how to stop it from happening"], ["Revenue Per Deal Focus", "Systematic approach to increasing average order size"]].map(([title, desc], i) => (
+                                <div key={title} style={{ padding: "20px 28px", background: i % 2 === 0 ? G.white : G.gray50, borderBottom: `1px solid ${G.gray200}` }}>
+                                    <p style={{ fontWeight: 500, color: G.gray900, marginBottom: 4 }}>{title}</p>
+                                    <p style={{ fontSize: 13, color: G.gray500, lineHeight: 1.5 }}>{desc}</p>
+                                </div>
+                            ))}
+                        </div>
+                    </div>
+                </div>
+            </section>
+
+            <section className="section-pad" style={{ background: G.gray50, borderTop: `1px solid ${G.gray200}` }}>
+                <div style={{ maxWidth: 1100, margin: "0 auto" }}>
+                    <div className="grid-2-start">
+                        <div className="service-order-1">
+                            <span style={{ fontSize: 11, fontWeight: 500, letterSpacing: "0.1em", textTransform: "uppercase", color: G.navy700, background: G.navy50, padding: "4px 12px", borderRadius: 20 }}>For Individuals</span>
+                            <h2 style={{ fontFamily: "'Cormorant Garamond', serif", fontSize: "clamp(28px, 4vw, 42px)", fontWeight: 600, color: G.gray900, margin: "20px 0 16px", lineHeight: 1.15 }}>Sales Training</h2>
+                            <p style={{ fontSize: 16, lineHeight: 1.8, color: G.gray500, marginBottom: 20 }}>
+                                A structured program for individual sales professionals who want to sharpen the fundamentals and see measurable improvement in the field — not in a classroom six months from now, but in their next deal.
+                            </p>
+                            <p style={{ fontSize: 16, lineHeight: 1.8, color: G.gray500, marginBottom: 36 }}>
+                                We cover the skills that move revenue: value framing, discovery, objection handling, pricing conversations, and close. Delivered with direct feedback, real-world application, and accountability built in.
+                            </p>
+                            <button onClick={() => navigate("contact")} style={{ padding: "14px 32px", background: G.navy800, color: G.white, border: "none", borderRadius: 4, fontFamily: "'DM Sans', sans-serif", fontSize: 13, fontWeight: 500, letterSpacing: "0.06em", textTransform: "uppercase", cursor: "pointer" }}>
+                                Enroll in Training
+                            </button>
+                        </div>
+                        <div className="service-order-2" style={{ border: `1px solid ${G.gray200}`, borderRadius: 8, overflow: "hidden" }}>
+                            <div style={{ background: G.navy800, padding: "20px 28px" }}>
+                                <p style={{ fontFamily: "'Cormorant Garamond', serif", fontSize: 20, fontWeight: 600, color: G.white }}>Core curriculum</p>
+                            </div>
+                            {[["Value-Based Selling", "Frame your offer around outcomes buyers care about, not features"], ["Buyer Psychology", "Understand how decisions are made and how to align with that process"], ["Price & Negotiation", "Hold your price, justify your value, and close without discounting"], ["Objection Handling", "Turn resistance into momentum with structured, confident responses"], ["Discovery Mastery", "Ask better questions. Understand more. Win more."], ["Momentum & Follow-Through", "Build habits that keep deals moving instead of dying in follow-up"]].map(([title, desc], i) => (
+                                <div key={title} style={{ padding: "20px 28px", background: i % 2 === 0 ? G.white : G.gray50, borderBottom: `1px solid ${G.gray200}` }}>
+                                    <p style={{ fontWeight: 500, color: G.gray900, marginBottom: 4 }}>{title}</p>
+                                    <p style={{ fontSize: 13, color: G.gray500, lineHeight: 1.5 }}>{desc}</p>
+                                </div>
+                            ))}
+                        </div>
+                    </div>
+                </div>
+            </section>
+
+            <section className="section-pad" style={{ background: G.green900 }}>
+                <div style={{ maxWidth: 1100, margin: "0 auto" }}>
+                    <div className="grid-2">
+                        <div>
+                            <p style={{ fontSize: 12, fontWeight: 500, letterSpacing: "0.2em", textTransform: "uppercase", color: G.gold, marginBottom: 16 }}>Not sure which is right for you?</p>
+                            <h2 style={{ fontFamily: "'Cormorant Garamond', serif", fontSize: "clamp(28px, 4vw, 42px)", fontWeight: 600, color: G.white, lineHeight: 1.15, marginBottom: 20 }}>
+                                Let's figure it out together.
+                            </h2>
+                            <p style={{ fontSize: 16, lineHeight: 1.8, color: "rgba(255,255,255,0.6)" }}>
+                                Tell us where you are and what you're working toward. The first conversation costs you nothing.
+                            </p>
+                        </div>
+                        <LeadForm bg={G.white}/>
+                    </div>
+                </div>
+            </section>
+
+            <footer className="footer-pad" style={{ background: G.green900, borderTop: `1px solid rgba(255,255,255,0.08)` }}>
+                <div className="footer-inner">
+                    <p style={{ fontFamily: "'Cormorant Garamond', serif", fontSize: 18, fontWeight: 600, color: "rgba(255,255,255,0.5)" }}>Barringer Consulting</p>
+                    <p style={{ fontSize: 13, color: "rgba(255,255,255,0.3)" }}>© {new Date().getFullYear()} Barringer Consulting. All rights reserved.</p>
+                </div>
+            </footer>
+        </div>
+    )
+}
+
+function ContactPage() {
+    return (
+        <div style={{ fontFamily: "'DM Sans', sans-serif" }}>
+            <section className="hero-pad" style={{ background: G.green900, paddingBottom: 80 }}>
+                <div style={{ maxWidth: 1100, margin: "0 auto" }}>
+                    <p style={{ fontSize: 12, fontWeight: 500, letterSpacing: "0.2em", textTransform: "uppercase", color: G.gold, marginBottom: 16 }}>Contact</p>
+                    <h1 style={{ fontFamily: "'Cormorant Garamond', serif", fontSize: "clamp(32px, 5vw, 60px)", fontWeight: 600, color: G.white, maxWidth: 560, lineHeight: 1.15, marginBottom: 20 }}>
+                        Let's talk about what's possible.
+                    </h1>
+                    <p style={{ fontSize: 18, lineHeight: 1.7, color: "rgba(255,255,255,0.6)", maxWidth: 480 }}>
+                        The first conversation is free. Fill out the form and we'll be in touch within one business day.
+                    </p>
+                </div>
+            </section>
+            <section className="section-pad" style={{ background: G.gray50 }}>
+                <div style={{ maxWidth: 1100, margin: "0 auto" }}>
+                    <div className="grid-contact">
+                        <div>
+                            <h3 style={{ fontFamily: "'Cormorant Garamond', serif", fontSize: 26, fontWeight: 600, color: G.gray900, marginBottom: 16 }}>Barringer Consulting</h3>
+                            <p style={{ fontSize: 14, lineHeight: 1.8, color: G.gray500, marginBottom: 28 }}>
+                                Sales performance consulting for professionals who are serious about growing their revenue and their career.
+                            </p>
+                            <a href="mailto:williamgblauvelt@gmail.com" style={{ fontSize: 14, color: G.green700, textDecoration: "none" }}>
+                                williamgblauvelt@gmail.com
+                            </a>
+                        </div>
+                        <LeadForm/>
+                    </div>
+                </div>
+            </section>
+            <footer className="footer-pad" style={{ background: G.green900, borderTop: `1px solid rgba(255,255,255,0.08)` }}>
+                <div className="footer-inner">
+                    <p style={{ fontFamily: "'Cormorant Garamond', serif", fontSize: 18, fontWeight: 600, color: "rgba(255,255,255,0.5)" }}>Barringer Consulting</p>
+                    <p style={{ fontSize: 13, color: "rgba(255,255,255,0.3)" }}>© {new Date().getFullYear()} Barringer Consulting. All rights reserved.</p>
+                </div>
+            </footer>
+        </div>
+    )
+}
+
+export default function BarringerConsulting() {
+    const [page, setPage] = useState("home")
+
+    return (
+        <div style={{ minHeight: "100vh", background: G.white }}>
+            <style>{globalStyles}</style>
+            <Nav page={page} setPage={setPage}/>
+            {page === "home" && <HomePage setPage={setPage}/>}
+            {page === "services" && <ServicesPage setPage={setPage}/>}
+            {page === "contact" && <ContactPage/>}
+        </div>
+    )
+}
