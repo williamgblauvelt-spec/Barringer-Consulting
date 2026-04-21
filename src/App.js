@@ -272,7 +272,7 @@ function HomePage({ setPage }) {
                                 Request a Consultation
                             </button>
                             <button onClick={() => navigate("services")} style={{ padding: "16px 36px", background: "transparent", color: "rgba(255,255,255,0.8)", border: "1px solid rgba(255,255,255,0.25)", borderRadius: 4, fontFamily: "'DM Sans', sans-serif", fontSize: 14, fontWeight: 400, letterSpacing: "0.06em", textTransform: "uppercase", cursor: "pointer" }}>
-                                View Services
+                                Learn More
                             </button>
                         </div>
                     </div>
