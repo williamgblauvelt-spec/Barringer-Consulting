@@ -258,8 +258,8 @@ function HomePage({ setPage }) {
                 <div style={{ maxWidth: 1100, margin: "0 auto", width: "100%", position: "relative", zIndex: 1 }}>
                     <div style={{ maxWidth: 680 }}>
                         <h1 style={{ fontFamily: "'Cormorant Garamond', serif", fontSize: "clamp(36px, 6vw, 72px)", fontWeight: 600, lineHeight: 1.1, color: G.white, marginBottom: 28 }}>
+                            <span style={{ display: "block", fontSize: "clamp(18px, 2.5vw, 28px)", fontWeight: 500, fontStyle: "normal", color: G.white, letterSpacing: "0.01em", marginBottom: 12 }}>Sales Performance Consulting</span>
                             <em style={{ color: G.green600, fontStyle: "italic" }}>Are you listening?</em>
-                            <span style={{ display: "block", fontSize: "clamp(18px, 2.5vw, 28px)", fontWeight: 500, fontStyle: "normal", color: G.white, letterSpacing: "0.01em", marginTop: 12 }}>Sales Performance Consulting</span>
                         </h1>
                         <p style={{ fontSize: 18, lineHeight: 1.7, color: "rgba(255,255,255,0.7)", marginBottom: 48, maxWidth: 520 }}>
                             Most salespeople aren't. They're pitching when they should be hearing. Talking price when they should be building value. Barringer Consulting helps you close the gap — and our clients see an average 79% increase in order size.
