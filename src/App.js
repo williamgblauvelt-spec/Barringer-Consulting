@@ -261,11 +261,10 @@ function HomePage({ setPage }) {
                             Sales Performance Consulting
                         </p>
                         <h1 style={{ fontFamily: "'Cormorant Garamond', serif", fontSize: "clamp(36px, 6vw, 72px)", fontWeight: 600, lineHeight: 1.1, color: G.white, marginBottom: 28 }}>
-                            Sales Performance Consulting{" "}
                             <em style={{ color: G.green600, fontStyle: "italic" }}>Are you listening?</em>
                         </h1>
                         <p style={{ fontSize: 18, lineHeight: 1.7, color: "rgba(255,255,255,0.7)", marginBottom: 48, maxWidth: 520 }}>
-                            Barringer Consulting works with sales professionals to increase revenue per deal, sharpen positioning, and build the habits that compound over time. Our clients see an average 79% increase in average order size.
+                            Most salespeople aren't. They're pitching when they should be hearing. Talking price when they should be building value. Barringer Consulting helps you close the gap — and our clients see an average 79% increase in order size.
                         </p>
                         <div style={{ display: "flex", gap: 16, flexWrap: "wrap" }}>
                             <button onClick={() => navigate("contact")} style={{ padding: "16px 36px", background: G.green700, color: G.white, border: "none", borderRadius: 4, fontFamily: "'DM Sans', sans-serif", fontSize: 14, fontWeight: 500, letterSpacing: "0.06em", textTransform: "uppercase", cursor: "pointer" }}>
