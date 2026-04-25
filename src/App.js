@@ -163,7 +163,7 @@ function LeadForm({ bg = G.white }) {
                     </button>
                     {status === "error" && (
                         <p style={{ color: "#DC2626", fontSize: 13, marginTop: 12, textAlign: "center" }}>
-                            Something went wrong. Please email us at williamgblauvelt@gmail.com
+                            Something went wrong. Please email us at hello@barringerconsulting.com
                         </p>
                     )}
                 </form>
@@ -257,11 +257,9 @@ function HomePage({ setPage }) {
                 <div style={{ position: "absolute", top: 0, right: 0, width: "45%", height: "100%", background: `linear-gradient(135deg, ${G.green800} 0%, ${G.navy900} 100%)`, clipPath: "polygon(15% 0%, 100% 0%, 100% 100%, 0% 100%)", opacity: 0.6 }}/>
                 <div style={{ maxWidth: 1100, margin: "0 auto", width: "100%", position: "relative", zIndex: 1 }}>
                     <div style={{ maxWidth: 680 }}>
-                        <p style={{ fontSize: 12, fontWeight: 500, letterSpacing: "0.2em", textTransform: "uppercase", color: G.gold, marginBottom: 24 }}>
-                            Sales Performance Consulting
-                        </p>
                         <h1 style={{ fontFamily: "'Cormorant Garamond', serif", fontSize: "clamp(36px, 6vw, 72px)", fontWeight: 600, lineHeight: 1.1, color: G.white, marginBottom: 28 }}>
                             <em style={{ color: G.green600, fontStyle: "italic" }}>Are you listening?</em>
+                            <span style={{ display: "block", fontSize: "clamp(18px, 2.5vw, 28px)", fontWeight: 500, fontStyle: "normal", color: G.white, letterSpacing: "0.01em", marginTop: 12 }}>Sales Performance Consulting</span>
                         </h1>
                         <p style={{ fontSize: 18, lineHeight: 1.7, color: "rgba(255,255,255,0.7)", marginBottom: 48, maxWidth: 520 }}>
                             Most salespeople aren't. They're pitching when they should be hearing. Talking price when they should be building value. Barringer Consulting helps you close the gap — and our clients see an average 79% increase in order size.
@@ -515,8 +513,8 @@ function ContactPage() {
                             <p style={{ fontSize: 14, lineHeight: 1.8, color: G.gray500, marginBottom: 28 }}>
                                 Sales performance consulting for professionals who are serious about growing their revenue and their career.
                             </p>
-                            <a href="mailto:williamgblauvelt@gmail.com" style={{ fontSize: 14, color: G.green700, textDecoration: "none" }}>
-                                williamgblauvelt@gmail.com
+                            <a href="mailto:hello@barringerconsulting.com" style={{ fontSize: 14, color: G.green700, textDecoration: "none" }}>
+                                hello@barringerconsulting.com
                             </a>
                         </div>
                         <LeadForm/>
