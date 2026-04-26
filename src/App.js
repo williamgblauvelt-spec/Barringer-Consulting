@@ -521,6 +521,24 @@ function ContactPage() {
                     </div>
                 </div>
             </section>
+            <section className="section-pad" style={{ background: G.white, borderTop: `1px solid ${G.gray200}` }}>
+                <div style={{ maxWidth: 1100, margin: "0 auto" }}>
+                    <div style={{ textAlign: "center", marginBottom: 12 }}>
+                        <h2 style={{ fontFamily: "'Cormorant Garamond', serif", fontSize: "clamp(26px, 4vw, 38px)", fontWeight: 600, color: G.gray900, marginBottom: 10 }}>Or Book Directly</h2>
+                        <p style={{ fontSize: 15, color: G.gray500, lineHeight: 1.6 }}>Prefer to skip the form? Pick a time that works for you.</p>
+                    </div>
+                    <div style={{ minHeight: 700, borderRadius: 8, overflow: "hidden" }}>
+                        <iframe
+                            src="https://calendly.com/williamgblauvelt/30min"
+                            width="100%"
+                            height="700"
+                            frameBorder="0"
+                            title="Schedule a meeting"
+                            style={{ border: "none", borderRadius: 8 }}
+                        />
+                    </div>
+                </div>
+            </section>
             <footer className="footer-pad" style={{ background: G.green900, borderTop: `1px solid rgba(255,255,255,0.08)` }}>
                 <div className="footer-inner">
                     <p style={{ fontFamily: "'Cormorant Garamond', serif", fontSize: 18, fontWeight: 600, color: "rgba(255,255,255,0.5)" }}>Barringer Consulting</p>
