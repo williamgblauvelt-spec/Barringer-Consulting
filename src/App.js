@@ -528,14 +528,7 @@ function ContactPage() {
                         <p style={{ fontSize: 15, color: G.gray500, lineHeight: 1.6 }}>Prefer to skip the form? Pick a time that works for you.</p>
                     </div>
                     <div style={{ minHeight: 700, borderRadius: 8, overflow: "hidden" }}>
-                        <iframe
-                            src="https://calendly.com/williamgblauvelt/30min"
-                            width="100%"
-                            height="700"
-                            frameBorder="0"
-                            title="Schedule a meeting"
-                            style={{ border: "none", borderRadius: 8 }}
-                        />
+                        <CalEmbed url="https://cal.com/barringer-consulting-f1hln1/30min" />
                     </div>
                 </div>
             </section>
