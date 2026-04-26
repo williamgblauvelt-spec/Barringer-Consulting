@@ -81,7 +81,7 @@ function LeadForm({ bg = G.white }) {
         e.preventDefault()
         setStatus("sending")
         try {
-            const res = await fetch("https://formspree.io/f/mojynvlp", {
+            const res = await fetch("https://usebasin.com/f/3028f42e011a", {
                 method: "POST",
                 headers: { "Content-Type": "application/json" },
                 body: JSON.stringify(form)
