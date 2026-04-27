@@ -40,6 +40,7 @@ body { font-family: 'DM Sans', sans-serif; overflow-x: hidden; }
 .grid-form-row { display: grid; grid-template-columns: 1fr 1fr; gap: 16px; margin-bottom: 16px; }
 
 .stat-bar { display: flex; justify-content: space-around; flex-wrap: wrap; }
+.stat-bar > div:not(:last-child) { border-bottom: none; }
 .nav-links { display: flex; align-items: center; gap: 36px; }
 .hamburger { display: none; background: none; border: none; cursor: pointer; padding: 8px; flex-direction: column; gap: 5px; }
 .mobile-menu { display: none; }
@@ -49,6 +50,7 @@ body { font-family: 'DM Sans', sans-serif; overflow-x: hidden; }
 .service-order-2 { order: 2; }
 
 @media (max-width: 768px) {
+    .hero-section { min-height: auto; padding-top: 80px; padding-bottom: 80px; }
     .section-pad { padding: 60px 20px; }
     .section-pad-sm { padding: 40px 20px; }
     .hero-pad { padding: 60px 20px; }
@@ -63,6 +65,9 @@ body { font-family: 'DM Sans', sans-serif; overflow-x: hidden; }
     .grid-form-row > div { margin-bottom: 16px; }
 
     .stat-bar { flex-direction: column; align-items: center; }
+    .stat-bar > div:not(:last-child) { border-bottom: 1px solid rgba(255,255,255,0.1); }
+    .hero-btn-container { flex-direction: column; }
+    .hero-btn { width: 100%; }
     .nav-links { display: none; }
     .hamburger { display: flex; }
     .mobile-menu { display: flex; flex-direction: column; background: #0D2B1A; padding: 16px 20px; border-top: 1px solid rgba(255,255,255,0.08); gap: 4px; }
@@ -253,7 +258,7 @@ function HomePage({ setPage }) {
     return (
         <div style={{ fontFamily: "'DM Sans', sans-serif" }}>
 
-            <section className="hero-pad" style={{ background: G.green900, minHeight: "88vh", display: "flex", alignItems: "center", position: "relative", overflow: "hidden" }}>
+            <section className="hero-pad hero-section" style={{ background: G.green900, minHeight: "88vh", display: "flex", alignItems: "center", position: "relative", overflow: "hidden" }}>
                 <div style={{ position: "absolute", top: 0, right: 0, width: "45%", height: "100%", background: `linear-gradient(135deg, ${G.green800} 0%, ${G.navy900} 100%)`, clipPath: "polygon(15% 0%, 100% 0%, 100% 100%, 0% 100%)", opacity: 0.6 }}/>
                 <div style={{ maxWidth: 1100, margin: "0 auto", width: "100%", position: "relative", zIndex: 1 }}>
                     <div style={{ maxWidth: 680 }}>
@@ -264,11 +269,11 @@ function HomePage({ setPage }) {
                         <p style={{ fontSize: 18, lineHeight: 1.7, color: "rgba(255,255,255,0.7)", marginBottom: 48, maxWidth: 520 }}>
                             Most salespeople aren't. They're pitching when they should be hearing. Talking price when they should be building value. Barringer Consulting helps you close the gap — and our clients see an average 79% increase in order size.
                         </p>
-                        <div style={{ display: "flex", gap: 16, flexWrap: "wrap" }}>
-                            <button onClick={() => navigate("contact")} style={{ padding: "16px 36px", background: G.green700, color: G.white, border: "none", borderRadius: 4, fontFamily: "'DM Sans', sans-serif", fontSize: 14, fontWeight: 500, letterSpacing: "0.06em", textTransform: "uppercase", cursor: "pointer" }}>
+                        <div className="hero-btn-container" style={{ display: "flex", gap: 16, flexWrap: "wrap" }}>
+                            <button className="hero-btn" onClick={() => navigate("contact")} style={{ padding: "16px 36px", background: G.green700, color: G.white, border: "none", borderRadius: 4, fontFamily: "'DM Sans', sans-serif", fontSize: 14, fontWeight: 500, letterSpacing: "0.06em", textTransform: "uppercase", cursor: "pointer" }}>
                                 Request a Consultation
                             </button>
-                            <button onClick={() => navigate("services")} style={{ padding: "16px 36px", background: "transparent", color: "rgba(255,255,255,0.8)", border: "1px solid rgba(255,255,255,0.25)", borderRadius: 4, fontFamily: "'DM Sans', sans-serif", fontSize: 14, fontWeight: 400, letterSpacing: "0.06em", textTransform: "uppercase", cursor: "pointer" }}>
+                            <button className="hero-btn" onClick={() => navigate("services")} style={{ padding: "16px 36px", background: "transparent", color: "rgba(255,255,255,0.8)", border: "1px solid rgba(255,255,255,0.25)", borderRadius: 4, fontFamily: "'DM Sans', sans-serif", fontSize: 14, fontWeight: 400, letterSpacing: "0.06em", textTransform: "uppercase", cursor: "pointer" }}>
                                 Learn More
                             </button>
                         </div>
