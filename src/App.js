@@ -65,6 +65,7 @@ body { font-family: 'DM Sans', sans-serif; overflow-x: hidden; }
     .grid-form-row > div { margin-bottom: 16px; }
 
     .stat-bar { flex-direction: column; align-items: center; }
+    .stat-bar > div { width: 100%; }
     .stat-bar > div:not(:last-child) { border-bottom: 1px solid rgba(255,255,255,0.1); }
     .hero-btn-container { flex-direction: column; }
     .hero-btn { width: 100%; }
